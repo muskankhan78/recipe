@@ -3,273 +3,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TotalAV Help Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TotalAV Customer Service & Support</title>
   <style>
-   /* Popup */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0; top: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.6);
-      justify-content: center;
-      align-items: center;
-    }
-    .modal-content {
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      width: 350px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .modal-content h2 {
-      margin-top: 0;
-      color: #e53334;
-    }
-    .modal-content p {
-      margin: 10px 0;
-      color: #444;
-    }
-    .modal-content a {
-      display: inline-block;
-      margin-top: 15px;
-      background: #e53334;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .close {
-      position: absolute;
-      top: 10px; right: 20px;
-      font-size: 24px;
-      cursor: pointer;
-      color: #666;
-    }
-  
-  
-  
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f9fc;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #222;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 180px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
       color: #222;
     }
-
-    /* Header */
-    header {
-      background: #1a2533;
-      padding: 50px 20px;
-      text-align: center;
-      color: #fff;
-      position: relative;
-    }
-    header h1 {
-      font-size: 36px;
-      margin: 0;
-      font-weight: bold;
-    }
-    .header-btn {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      background: #fff;
-      color: #1a2533;
-      padding: 10px 18px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-    }
-
-    /* Cards */
-    .cards, .other-cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      max-width: 1200px;
-      margin: 50px auto;
-      padding: 0 40px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      padding: 40px 25px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transition: 0.3s;
-      text-align: center;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    }
-    .card img {
-      width: 55px;
-      height: 55px;
-      margin-bottom: 15px;
-    }
-    .card h3 {
-      margin: 0;
+    p {
       font-size: 18px;
-      color: #e53334;
+      line-height: 1.6;
     }
-    .card p {
-      margin-top: 8px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    /* Section subtitle */
-    .subtitle {
-      font-size: 22px;
-      font-weight: bold;
-      max-width: 1200px;
-      margin: 0 auto 20px;
-      padding: 0 40px;
-      color: #1a2533;
-    }
-
-    /* Footer */
-    footer {
-      background: #fff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 13px;
-      border-top: 1px solid #ddd;
-    }
-    footer .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      color: #1a2533;
-    }
-    footer .logo img {
-      height: 20px;
-      margin-right: 8px;
-    }
-    footer .links a {
-      margin-left: 15px;
+    .cta-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #e63946;
+      color: #fff;
+      font-size: 20px;
+      border: none;
+      border-radius: 8px;
       text-decoration: none;
-      color: #666;
+      transition: 0.3s;
     }
-    footer .links a:hover {
-      color: #e53334;
+    .cta-btn:hover {
+      background: #d62828;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <a href="#" class="header-btn">My Account</a>
-    <h1>TotalAV Help Center</h1>
-  </header>
+<header>
+  <img src="https://sm.pcmag.com/pcmag_me/cover/t/totalav-an/totalav-antivirus-pro_vq4j.png" alt="TotalAV Logo">
+</header>
 
-  <!-- Main Support Cards -->
-  <div class="cards">
-    <div class="card" onclick="openModal('Technical Product Support')">
-      <img src="https://support-image.totalav.com/2024-tav-logo.svg" alt="Support">
-      <h3>Technical Product Support</h3>
-      <p>Get started with TotalAV</p>
-    </div>
-    <div class="card" onclick="openModal('Account Support')">
-      <img src="https://support-image.totalav.com/tav-account-support.svg" alt="Account">
-      <h3>Account Support</h3>
-      <p>Everything to do with your TotalAV Account</p>
-    </div>
-    <div class="card" onclick="openModal('Billing Support')">
-      <img src="https://support-image.totalav.com/tav-billing-support.svg" alt="Billing">
-      <h3>Billing Support</h3>
-      <p>Everything Billing related on your account</p>
-    </div>
-  </div>
+<div class="container">
+  <h1>TotalAV Customer Service</h1>
+  <p>
+    Need help with your TotalAV Antivirus? Our dedicated support team is available to assist 
+    you with installation, account setup, subscription issues, renewal, and troubleshooting. 
+    Call now to get instant support.
+  </p>
 
-  <!-- Other Products Section -->
-  <div class="subtitle">Other Products and Services</div>
-  <div class="other-cards">
-    <div class="card" onclick="openModal('Adblock Support')">
-      <img src="https://support-image.totalav.com/2024-tab-logo.svg" alt="Adblock">
-      <h3>Total Adblock</h3>
-      <p>Everything Total Adblock</p>
-    </div>
-    <div class="card" onclick="openModal('VPN Support')">
-      <img src="https://support-image.totalav.com/2024-tvn-logo.svg" alt="VPN">
-      <h3>Total VPN</h3>
-      <p>Everything Total VPN</p>
-    </div>
-    <div class="card" onclick="openModal('Drive Support')">
-      <img src="https://support-image.totalav.com/2024-tdr-logo.svg" alt="Drive">
-      <h3>Total Drive</h3>
-      <p>Everything Total Drive</p>
-    </div>
-    <div class="card" onclick="openModal('Password Support')">
-      <img src="https://support-image.totalav.com/2024-tdr-logo.svg" alt="Password">
-      <h3>Total Password</h3>
-      <p>Everything Total Password</p>
-    </div>
-    <div class="card" onclick="openModal('WebShield Support')">
-      <img src="https://support-image.totalav.com/2024-tws-logo.svg" alt="WebShield">
-      <h3>Total WebShield</h3>
-      <p>Everything Total WebShield</p>
-    </div>
-    <div class="card" onclick="openModal('Cleaner Support')">
-      <img src="https://support-image.totalav.com/2024-tcl-logo.svg" alt="Cleaner">
-      <h3>Total Cleaner</h3>
-      <p>Everything Total Cleaner</p>
-    </div>
-    <div class="card" onclick="openModal('Browser Support')">
-      <img src="https://support-image.totalav.com/2024-tbr-logo.svg" alt="Browser">
-      <h3>Total Browser</h3>
-      <p>Everything Total Browser</p>
-    </div>
-  </div>
-  
-    <!-- Popup -->
-  <div id="supportModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2>Contact Support</h2>
-      <h3>For <span id="supportType"></span></h3>
-      <h1><strong>📞 +1 (856) 805-7392</strong></h1>
-      <a href="tel:+1(856) 805-7392">Call Now</a>
-    </div>
-  </div>
-  
-    <!-- JS -->
-  <script>
-    function openModal(type) {
-      document.getElementById("supportType").innerText = type;
-      document.getElementById("supportModal").style.display = "flex";
-    }
-    function closeModal() {
-      document.getElementById("supportModal").style.display = "none";
-    }
-    window.onclick = function(event) {
-      const modal = document.getElementById("supportModal");
-      if (event.target == modal) {
-        closeModal();
-      }
-    }
-  </script>
+  <!-- Call to Action Button -->
+  <a href="tel:+1(856) 805-7392" class="cta-btn">📞 Call Now: +1 (856) 805-7392</a>
+</div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="logo">
-      <img src="https://sm.pcmag.com/pcmag_me/cover/t/totalav-an/totalav-antivirus-pro_vq4j.png" alt="Shield">
-      
-    </div>
-    <div class="links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">EULA</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Uninstall</a>
-    </div>
-  </footer>
+<footer>
+  <p>Disclaimer: This is a customer support page for TotalAV. For official resources, visit <a href="https://www.totalav.com" target="_blank">TotalAV.com</a>.</p>
+</footer>
 
 </body>
 </html>
