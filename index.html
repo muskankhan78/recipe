@@ -1,328 +1,277 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Green Valley</title>
 
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-     <script type="text/javascript"  src="js/jquery-2.1.1.min.js"></script>
-     <script  type="text/javascript" src="js/bootstrap.min.js"></script>
-     <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-	 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
- 
+	<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=cc7a98b0"></script>
+  <meta charset="UTF-8">
+  <title>TotalAV Help Center</title>
+  <style>
+   /* Popup */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      color: #e53334;
+    }
+    .modal-content p {
+      margin: 10px 0;
+      color: #444;
+    }
+    .modal-content a {
+      display: inline-block;
+      margin-top: 15px;
+      background: #e53334;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .close {
+      position: absolute;
+      top: 10px; right: 20px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #666;
+    }
+  
+  
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #1a2533;
+      padding: 113px 20px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: bold;
+    }
+    .header-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      background: #fff;
+      color: #1a2533;
+      padding: 10px 18px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* Cards */
+    .cards, .other-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 40px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+    .card img {
+      width: 55px;
+      height: 55px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #e53334;
+    }
+    .card p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Section subtitle */
+    .subtitle {
+      font-size: 22px;
+      font-weight: bold;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      padding: 0 40px;
+      color: #1a2533;
+    }
+
+    /* Footer */
+    footer {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      border-top: 1px solid #ddd;
+    }
+    footer .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #1a2533;
+    }
+    footer .logo img {
+      height: 20px;
+      margin-right: 8px;
+    }
+    footer .links a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #666;
+    }
+    footer .links a:hover {
+      color: #e53334;
+    }
+  </style>
 </head>
-
 <body>
-<section id="header">
- <div class="container">
-  <div class="row">
-   <div class="col-sm-12 header">
-    <div class="col-sm-5 header_left">
-	 <h4>Search Now</h4> 
-	 <ul>
-	 <li class="zipper"><input title="Enter a 5 Digit Zip Code" type="text" name="GLOC" class="form-control store-locator-form__input" placeholder="Searche Here"></li>
-	 <li class="zipper_1"><a href="#">Search</a></li>
-	 </ul>
-	</div>
-	<div class="col-sm-4 header_center">
-	 <h4><a href="index.html">Veggice<span class="header_center_1">Recipe</span></a></h4>
-	</div>
-	
-   </div>
-  </div>
- </div>
-</section>
-<section id="top">
- <div class="container">
-  <div class="row">
-     <div class="col-sm-12 top">
-    <nav class="navbar">
-    <div class="navbar-header">
-    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-	</div>
-	<div class="collapse navbar-collapse js-navbar-collapse">
-		<ul class="nav navbar-nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="About.html">About</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-			<li><a href="index.html">Privacy Policy</a></li>
-			
-	
-		
 
-		
-			
-			
-		</ul>
-	</div><!-- /.nav-collapse -->
-  </nav>
-   </div>
-  </div>
- </div>
-</section>
-<section id="mini">
- <div class="container">
-  <div class="row">
-     <div class="col-sm-12 top">
-    <nav class="navbar">
-    <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse_1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Veggice<span class="header_center_1">Recipe</span>  </a>
-            </div>
-	<div class="collapse navbar-collapse js-navbar-collapse_1">
-		<ul class="nav navbar-nav">
-			
-			<li><a href="index.html">Home</a></li>
-			<li><a href="About.html">About</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-			<li><a href="index.html">Privacy Policy</a></li>
-			
-			
-			
-		</ul>
-	</div><!-- /.nav-collapse -->
-  </nav>
-   </div>
-  </div>
- </div>
-</section>
-<section id="center" class="clearfix center_brand">
-  <img src="img/2.jpg" alt="abc" class="iw mgt">
-</section>
-<section id="brand_page" class="clearfix">
- <div class="container">
-  <div class="row">
-   <div class="bp_1 clearfix">
-     <h2>28 Delicious Apple Desserts<br>
-A <strong>Veggice</strong> Where Veggie Delights Meet Culinary Innovation!</h2>
-     <p>From cider cake to Tarte Tatin, here's how to enjoy sweet applications for all those apples this season. </p>
-   </div>
-   <div class="bp_2 clearfix">
-     <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/60.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Apple Upside-Down Cake</h2>
-		<h4><a class="button mgt" href="dt01.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt01.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/61.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Tarte Tatin</h2>
-		<h4><a class="button mgt" href="dt02.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt02.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/62.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Gorgeous Glazed Apple Fritters</h2>
-		<h4><a class="button mgt" href="dt03.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt03.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/63.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Spiced Brown-Butter Apples</h2>
-		<h4><a class="button mgt" href="dt04.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt04.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-   </div>
-   <div class="bp_2 mgt clearfix">
-     <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/64.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Cinnamon-Apple Babka</h2>
-		<h4><a class="button mgt" href="dt05.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt05.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/65.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Apple-Rum Spice Cake</h2>
-		<h4><a class="button mgt" href="dt07.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt07.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/66.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Apple-Pomegranate Cobbler</h2>
-		<h4><a class="button mgt" href="dt04.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt04.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/67.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Maple-Apple Upside-Down Cake</h2>
-		<h4><a class="button mgt" href="dt05.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt07.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-   </div>
-   <div class="bp_2 mgt clearfix">
-     <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/68.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>15 New Year's Eve Dinner Ideas</h2>
-		<h4><a class="button mgt" href="dt02.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt01.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/69.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>25 Top-Rated Dinner Ideas Guaranteed to Save Your Weeknights</h2>
-		<h4><a class="button mgt" href="details.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="details.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/70.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Make It a Meal: 5 Midwinter Weeknight Dinner Ideas</h2>
-		<h4><a class="button mgt" href="dt06.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt06.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-	 <div class="col-sm-3 space_all">
-	  <div class="bp_2m clearfix">
-	   <div class="bp_2mi">
-	    <img style="height:250px;" src="img/71.jpg" class="iw mgt" alt="abc">
-	   </div>
-	   <div class="bp_2mi1 text-center">
-	    <h2>Make It a Meal: 5 Easy Summer Dinner Menu Ideas</h2>
-		<h4><a class="button mgt" href="dt03.html">PDF<i class="fa fa-chevron-right"></i></a></h4>
-		<h4><a class="button mgt" href="dt03.html">Read Now <i class="fa fa-chevron-right"></i></a></h4>
-	   </div>
-	  </div>
-	 </div>
-   </div>
-   
-   
+  <!-- Header -->
+  <header>
+    <a href="#" class="header-btn">My Account</a>
+    <h1>TotalAV Help Center</h1>
+	<h2>Call Support Team +1 (854) 259-0579 </h2>
+  </header>
 
-<header>
-        <h1>Welcome to A Veggice</h1>
-        <p>Your Ultimate Destination for Vegetarian and Vegan Recipes!</p>
-    </header>
-
-    <section>
-        <h2>About A Veggice</h2>
-        <p>At A Veggice, we're on a mission to redefine plant-based cooking with a collection of search engine optimized,
-            flavorful, and nutritious recipes. Whether you're a seasoned chef or a kitchen novice, our platform offers a
-            diverse array of culinary delights that are not only delicious but also optimized for your well-being.</p>
-        <p>Join us in exploring the world of SEO-friendly vegetarian and vegan cuisine, where every recipe is a step towards
-            a healthier and more sustainable lifestyle.</p>
-        <p><strong>A Veggice:</strong> Unleash the Power of SEO-friendly Plant-Based Goodness in Every Bite!</p>
-    </section>
-   
-</section>
-<section id="footer">
- <div class="container">
-  <div class="row">
-   <div class="col-sm-12 footer">
-   <div class="col-sm-1"></div>
-   <div class="col-sm-5 footer_left">
-    <h4>Welcome to A Veggice, your go-to destination for a world of plant-based culinary excellence! Immerse yourself in a symphony of flavors and discover the art of creating delicious and nutritious meals that celebrate the bounty of nature.</h4>
-	<div class="col-sm-12 footer_left_top">
-	 <div class="col-sm-4 footer_left_top_1">
-	  <ul>
-	   <li><a href="index.html">Home</a></li>
-	    <li><a href="contact.html">Contact</a></li>
-		 <li><a href="index.html">Recipe</a></li>
-	
-	  </ul>
-	 </div>
-	 
-	 <div class="col-sm-4 footer_left_top_1">
-	  <ul>
-	   <li><a href="about.html">About Us</a></li>
-	   
-		 
-	  </ul>
-	 </div>
-	</div>
-   </div>
-   <div class="col-sm-5 footer_right">
-    <h3>Join our email list!</h3>
-	<div class="footer_right_1">
-	 <ul>
-	 <li class="zipper"><input title="Enter a 5 Digit Zip Code" type="text" name="GLOC" class="form-control store-locator-form__input" placeholder="Email Address"></li>
-	 <li class="zipper_1"><a href="#">Sign up</a></li>
-	 </ul>
-	</div>
-	
-   </div>
-   </div>
-   <div class="col-sm-12 footer_end">
-    <div class="parag text-center">
-	  <p class="website">© 2023 Your Website Name. All rights reserved | Design by<a href="#"> Web Experts</a></p>
-	 </div>
-   </div>
+  <!-- Main Support Cards -->
+  <div class="cards">
+    <div class="card" onclick="openModal('Technical Product Support')">
+      <img src="https://support-image.totalav.com/2024-tav-logo.svg" alt="Support">
+      <h3>Technical Product Support</h3>
+      <p>Get started with TotalAV</p>
+    </div>
+    <div class="card" onclick="openModal('Account Support')">
+      <img src="https://support-image.totalav.com/tav-account-support.svg" alt="Account">
+      <h3>Account Support</h3>
+      <p>Everything to do with your TotalAV Account</p>
+    </div>
+    <div class="card" onclick="openModal('Billing Support')">
+      <img src="https://support-image.totalav.com/tav-billing-support.svg" alt="Billing">
+      <h3>Billing Support</h3>
+      <p>Everything Billing related on your account</p>
+    </div>
   </div>
- </div>
-</section>
+
+  <!-- Other Products Section -->
+  <div class="subtitle">Other Products and Services</div>
+  <div class="other-cards">
+    <div class="card" onclick="openModal('Adblock Support')">
+      <img src="https://support-image.totalav.com/2024-tab-logo.svg" alt="Adblock">
+      <h3>Total Adblock</h3>
+      <p>Everything Total Adblock</p>
+    </div>
+    <div class="card" onclick="openModal('VPN Support')">
+      <img src="https://support-image.totalav.com/2024-tvn-logo.svg" alt="VPN">
+      <h3>Total VPN</h3>
+      <p>Everything Total VPN</p>
+    </div>
+    <div class="card" onclick="openModal('Drive Support')">
+      <img src="https://support-image.totalav.com/2024-tdr-logo.svg" alt="Drive">
+      <h3>Total Drive</h3>
+      <p>Everything Total Drive</p>
+    </div>
+    <div class="card" onclick="openModal('Password Support')">
+      <img src="https://support-image.totalav.com/2024-tdr-logo.svg" alt="Password">
+      <h3>Total Password</h3>
+      <p>Everything Total Password</p>
+    </div>
+    <div class="card" onclick="openModal('WebShield Support')">
+      <img src="https://support-image.totalav.com/2024-tws-logo.svg" alt="WebShield">
+      <h3>Total WebShield</h3>
+      <p>Everything Total WebShield</p>
+    </div>
+    <div class="card" onclick="openModal('Cleaner Support')">
+      <img src="https://support-image.totalav.com/2024-tcl-logo.svg" alt="Cleaner">
+      <h3>Total Cleaner</h3>
+      <p>Everything Total Cleaner</p>
+    </div>
+    <div class="card" onclick="openModal('Browser Support')">
+      <img src="https://support-image.totalav.com/2024-tbr-logo.svg" alt="Browser">
+      <h3>Total Browser</h3>
+      <p>Everything Total Browser</p>
+    </div>
+  </div>
+  
+    <!-- Popup -->
+  <div id="supportModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Call Now TotalAV Support</h2>
+      <h3>For <span id="supportType"></span></h3>
+      <h1><strong>+1(854) 259-0579</strong></h1>
+      <a href="tel:+1 (854) 259-0579">Call Now</a>
+    </div>
+  </div>
+  
+    <!-- JS -->
+  <script>
+    function openModal(type) {
+      document.getElementById("supportType").innerText = type;
+      document.getElementById("supportModal").style.display = "flex";
+    }
+    function closeModal() {
+      document.getElementById("supportModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById("supportModal");
+      if (event.target == modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">
+      <img src="https://sm.pcmag.com/pcmag_me/cover/t/totalav-an/totalav-antivirus-pro_vq4j.png" alt="Shield">
+      
+    </div>
+    <div class="links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">EULA</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Uninstall</a>
+    </div>
+  </footer>
+
 </body>
 </html>
